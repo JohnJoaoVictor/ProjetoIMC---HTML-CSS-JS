@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/js/calculo_imc.js"></script>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <title>HospitAmor</title>
+</head>
+<body>
+
+       <div class="container">
+        <div id="calc-container">
+
+       <!-- <section id="img">
+            <img src="assets/IMG/hospital.png" alt="">
+        </section> -->
+       
+        <div class="telalogin">
+            <h1>Bem Vindo ao HospitAmor</h1>
+
+            <h2>IMC - Índice de Massa Corporal</h2>
+
+            <form class="dados">
+                 <div class="control">
+                <label for="nome">Insira seu Nome</label>
+                <input type="text" placeholder="Ex: Pedro" id="nome">
+                   </div>
+
+                   <div class="control">
+                <label for="idade">Insira sua Idade:</label>
+                <input type="number" placeholder="Ex: 20" id="idade">
+                   </div>
+                   
+                   <div class="control">
+                <label for="peso">Insira seu Peso(Kg):</label>
+                <input type="number" placeholder="Ex: 78" id="peso">
+                   </div>
+
+                   <div class="control">
+                <label for="altura">Insira sua Altura(M):</label>
+                <input type="number" placeholder="Ex: 1.50" id="altura">
+                   </div>
+
+                   <div class="bottoms">
+                <button id="calcular" onclick="CalcularIMC">Calcular</button> <!--resultado-->
+                <button id="limpar">limpar</button>
+                   </div>
+            </form> 
+        </div>
+
+        <div class="resultado-container">
+        <p id="imcclassi">Classificação: <span></span></p>
+        <p id="imc-comor">Risco de Comorbidade: <span></span></p> 
+        <p id="class-table">Tabela de Classificação</p>
+         <div id="imc-table">
+            <div class="imc-oms">
+                <h4>IMC</h4>
+                <h4>Classificação</h4>
+                <h4>Comorbidade</h4>
+            </div>
+            <div class="imc-data" id="baixo-imc"> <!--baixo-->
+                <p>Inferior a 18.5</p>
+                <p>Baixo Peso</p>
+                <p>Baixo</p>
+            </div>
+            <div class="imc-data" id="normal-imc"> <!--normal-->
+                <p>18,5 a 24,9</p>
+                <p>Normal</p>
+                <p>Normal</p>
+            </div>
+            <div class="imc-data" id="sobrepeso-imc"> <!--aumentado-->
+                <p>25,0 a 29,9</p>
+                <p>Sobrepeso</p>
+                <p>Aumentado</p>
+            </div>
+            <div class="imc-data" id="obesidade-imc"> <!--moderado-->
+                <p>30,0 a 34,9</p>
+                <p>Obesidade</p>
+                <p>Moderado</p>
+            </div>
+            <div class="imc-data" id="obsmor-imc"> <!--grave-->
+                <p>35,0 a 39,9</p>
+                <p>Obesidade Mórbida</p>
+                <p>Grave</p>
+            </div>
+            <div class="imc-data" id="obsbida-imc"> <!--muito grave-->
+                <p>Superior a 40,0</p>
+                <p>Obesidade Mórbida</p>
+                <p>Muito Grave</p>
+            </div>
+         </div> 
+
+         <div class="secondbutton">
+         <button id="voltar-btn">Voltar</button>
+         <button id="verplanos">Ver Planos</button>
+         </div>
+         </div>
+     </div>
+   </div>
+</body>
+</html>

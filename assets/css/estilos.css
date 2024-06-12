@@ -1,0 +1,208 @@
+* { 
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-style: "asap", sans-serif;
+}
+
+body {
+   background: linear-gradient(to right, rgb(215, 131, 191), rgb(90, 7, 88));
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   min-height: 100vh;
+}
+
+
+
+.container {
+   min-height: 400px;
+   min-width: 400px;
+   background-color: rgba(49, 70, 93, 0.138);
+   padding: 2rem;
+   box-shadow: 2px 2px rgba(255, 255, 255, 0.556), 15px 15px rgb(88, 35, 71);
+}
+
+/* FORM IMC */
+
+#calc-container h1 {
+   text-align: center;
+   font-weight: bold;
+   font-size: 40px;
+   margin-bottom: 1.5rem;
+}
+
+.telalogin h2 {
+   text-align: center;
+   text-shadow: 1.5px 1.5px 1.5px rgb(31, 1, 32);
+   font-weight: 700;
+   margin-bottom: 0.5rem;
+}
+
+.dados {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.control {
+   display: flex;
+   flex-direction: column;
+   flex: 1;
+   padding-bottom: 0.5rem;
+}
+
+.control label {
+   font-weight: bold;
+   margin-bottom: 0.4rem;
+   color: rgb(229, 232, 235);
+}
+
+.control input {
+   padding: 0.5rem;
+   font-size: 14px;
+   border: none;
+   border-radius: .8rem;
+   border: 1px solid white;
+   background: transparent;
+   color: white;
+}
+
+.control input::placeholder {
+   color: white;
+}
+
+.bottoms {
+   display: flex;
+   justify-content: space-around;
+   margin-top: 1rem;
+   gap: 0.8rem;
+}
+
+button {
+   text-transform: uppercase;
+   background-color: rgb(64, 5, 67);
+   padding: 0.9rem 0.8rem;
+   color: white;
+   cursor: pointer;
+   opacity: 0.6;
+   border: none;
+   border-radius: 10px;
+}
+
+button:hover {
+   opacity: 1.5;
+}
+
+/* TABELA */
+
+.resultado-container {
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+}
+
+#imcclassi {
+   font-size: 24px;
+   font-weight: bold;
+   padding-top: 0.5rem;
+   text-align: left;
+}
+
+.classispan {
+   font-size: 24px
+}
+
+#imc-comor {
+   font-size: 24px;
+   font-weight: bold;
+   text-align: left;
+   padding-bottom: 1.5rem;
+}
+
+#class-table {
+   font-size: 20px;
+   font-weight: bold;
+   margin-bottom: 0.9rem;
+   color: rgb(255, 217, 217);
+}
+
+.imc-table {
+   color: rgb(231, 204, 204) ;
+   margin: 1.5rem 0;
+}
+
+.imc-oms, .imc-data {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: .3rem;
+   padding-bottom: .1rem;
+   border-bottom: 1px solid pink;
+}
+
+.imc-oms h4, .imc-data p {
+   flex: 1;
+}
+
+.secondbutton {
+   display: flex;
+   justify-content: space-around;
+   margin-top: .5rem;
+   gap: 1px
+}
+
+#baixo-imc {
+   background-color: rgb(209, 121, 193);
+   margin-top: -0.4em;
+}
+
+#normal-imc {
+   background-color: rgb(237, 120, 220);
+   margin-top: -0.4em;
+}
+
+#sobrepeso-imc {
+   background-color: rgb(220, 21, 177);
+   margin-top: -0.4em;
+}
+
+#obesidade-imc {
+   background-color: rgb(102, 52, 103);
+   margin-top: -0.4em;
+}
+
+#obsmor-imc {
+   background-color: rgb(83, 26, 81);
+   margin-top: -0.4em;
+}
+
+#obsbida-imc {
+   background-color: rgb(61, 8, 72);
+   margin-top: -0.5em;
+}
+
+.baixopeso {
+   color: rgb(212, 113, 219);
+   text-shadow: 1.5px 1.5px 1.5px rgb(0, 0, 0);
+}
+
+.normal {
+   color: rgb(211, 62, 221);
+}
+
+.aumentado {
+   color: rgb(207, 24, 221);
+}
+
+.moderado {
+   color: rgb(86, 32, 90);
+}
+
+.grave {
+   color: rgb(78, 32, 80);
+}
+
+.muitograve {
+   color: rgb(63, 5, 67);
+}
