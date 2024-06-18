@@ -4,29 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HospitAmor</title>
-    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="estilos.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container mt-5">
+    <div class="container">
         <h1 class="text-center">Calculadora - IMC</h1>
         <form id="formulario">
+
             <div class="form-group">
                 <label for="idade">Idade</label>
                 <input type="number" class="form-control" id="idade" required>
             </div>
+
             <div class="form-group">
                 <label for="peso">Peso (kg)</label>
                 <input type="number" class="form-control" id="peso" required>
             </div>
+
             <div class="form-group">
                 <label for="altura">Altura (cm)</label>
-                <input type="number" step="0.01" class="form-control" id="altura" required>
+                <input type="number" class="form-control" id="altura" required>
             </div>
-            <button id="button" type="button" class="btn btn-primary btn-block" onclick="compararPlanos()">Calcular</button>
+
+            <button id="button" type="submit">Calcular</button>
         </form>
+
+        
         <div id="resultado" class="mt-4"></div>
     </div>
-    <script src="assets/js/calculoimc.js"></script>
+    <script src="calculoimc.js"></script>
 </body>
 </html>
